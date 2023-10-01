@@ -2,12 +2,8 @@ const Home: React.FC = () => (
   <>
     {" "}
     <section>
-      <h2 className="subtitle">Home.</h2>
-      <p>
-        I have been a fan of <em>React Router</em> ever since I heard their
-        first album 😍😍
-      </p>
-      <p>Please enjoy my fan page! I'll make more content soon.</p>
+      <h2 className="subtitle">HOME</h2>
+      <p>😍😍</p>
     </section>
   </>
 );
