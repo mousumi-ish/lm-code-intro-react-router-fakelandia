@@ -67,23 +67,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-ul {
-  border-radius: 6px;
-  justify-content: center;
-  display: flex;
-  list-style-type: none;
-  background-color: #e52165;
-}
-
-li a {
-  display: block;
-  border-radius: 6px;
-  text-decoration: none;
-  padding: 12px;
-  margin: 12px;
-  color: #fff;
-}
-
-li a:hover {
-  background-color: #0d1137;
-}

@@ -1,14 +1,12 @@
 import Nav from "./Nav";
 
 const Header: React.FC = () => (
-  <>
-    <header>
-      <div className="header__wrapper">
-        <a>Fakelandia Justice Department</a>
-        <Nav />
-      </div>
-    </header>
-  </>
+  <header className="header has-background-primary is-flex is-align-items-center is-justify-content-center">
+    <h1 style={{ color: "red" }}>
+      REPUBLIC OF FAKELANDIA <br />
+      Ministry of Justice
+    </h1>
+    <Nav />
+  </header>
 );
-
 export default Header;

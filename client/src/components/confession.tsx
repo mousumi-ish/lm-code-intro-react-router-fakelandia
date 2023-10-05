@@ -1,29 +1,8 @@
-//const Confession: React.FC = () => <>Confession!</>;
-import React, { useState } from "react";
-
-export interface interfaceConfesTextProps {
-  confesText: string;
-
-  onChangeConfesText: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}
-
-const Confession: React.FC = () => {
-  const [confesTextComponent, setconfesTextComponent] =
-    useState(" confes & relax ");
-
-  return (
-    <>
-      <h3> Confession </h3>
-
-      <form>
-        <input
-          type="submit"
-          value={confesTextComponent}
-          onChange={(event) => setconfesTextComponent(event.target.value)}
-        ></input>
-      </form>
-    </>
-  );
-};
+const Confession: React.FC = () => (
+  <section className="content">
+    <h2 className="subtitle">Confess here</h2>
+    <p>You will feel much better when you have got it off your chest</p>
+  </section>
+);
 
 export default Confession;
