@@ -6,8 +6,8 @@ import Misdemeanour from "./misdemeanours";
 import NotFound from "./notFound";
 import MainLayout from "./mainLayout";
 import Help from "./help";
-import App from "../App";
-import ReactDOM from "react-dom";
+//import App from "../App";
+//import ReactDOM from "react-dom";
 
 const Router = () => (
   <Routes>
@@ -18,6 +18,7 @@ const Router = () => (
       <Route path="confession" element={<Confession />} />
       <Route path="misdemeanour" element={<Misdemeanour />} />
       <Route path="Form" element={<Form />} />
+
       <Route path="*" element={<NotFound />} />
     </Route>
   </Routes>

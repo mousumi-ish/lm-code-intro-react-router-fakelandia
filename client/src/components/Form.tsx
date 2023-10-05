@@ -1,21 +1,28 @@
-import { useState } from "react";
-const Form = () => {
-  const [fname, setFname] = useState("");
+//import Confession from "./confession";
 
-  const handleChange = (e: any) => {
-    setFname(e.target.value);
-    return (
-      <>
-        <h1>Controlled Form</h1>
-        <form>
-          <label>
-            First Name:{" "}
-            <input type="text" value={fname} onChange={handleChange} />
-          </label>
-        </form>
-        <h5>First name: {fname}</h5>
-      </>
-    );
-  };
+//import { useState } from "react";
+const handleSubmit = (event: any) => {
+  event.PreventDefault();
+  //const formData = new FormData(event.target);
+  //const name = formData.get("name");
+  console.log("Message message");
 };
+const Form = () => {
+  return (
+    <>
+      <h1>Form Elements</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Confession:
+          <input type="text" name="name" />
+        </label>
+        <label>
+          Message:
+          <textarea name="message" />
+        </label>
+      </form>
+    </>
+  );
+};
+
 export default Form;
