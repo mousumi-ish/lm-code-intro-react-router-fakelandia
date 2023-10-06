@@ -54,7 +54,7 @@ const ConfessionForm: React.FC = () => {
       />
 
       <button type="submit" disabled={!isFormValid}>
-        Submit
+        Confess
       </button>
     </form>
   );

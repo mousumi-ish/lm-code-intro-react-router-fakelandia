@@ -17,11 +17,11 @@ const ReasonDropdown: React.FC<Props> = ({ value, onChange }) => {
         value={value}
         onChange={(e) => onChange(e.target.value as Reason)}
       >
-        <option value="just-talk">Just talk</option>
-        <option value="rudeness">Rudeness</option>
-        <option value="vegetables">Vegetables</option>
-        <option value="lift">Lift</option>
-        <option value="united">United</option>
+        <option value="ALL 🤪 🗣 🥗 😈"> ALL Misdemeanours 🤪 </option>
+        <option value="rudeness 🤪"> Mild Public Rudeness 🤪 </option>
+        <option value="lift 🗣"> Speaking in a Lift 🗣 </option>
+        <option value="vegetables 🥗"> Not Eating Your Vegetables 🥗 </option>
+        <option value="united 😈"> Supporting Manchester United 😈 </option>
       </select>
     </div>
   );

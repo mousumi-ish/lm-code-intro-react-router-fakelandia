@@ -4,9 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Router from "./components/Router";
 import { useState, useEffect } from "react";
 import { MisdemeanourKind } from "./components/types/misdemeanours.types";
-function MyButton() {
-  return <button>Confess</button>;
-}
+
 function App() {
   const [misdemeanours, setMisdemeanours] = useState<MisdemeanourKind[]>([]);
 
@@ -28,7 +26,6 @@ function App() {
     <>
       <BrowserRouter>
         <Router />
-        <MyButton />
       </BrowserRouter>
     </>
   );

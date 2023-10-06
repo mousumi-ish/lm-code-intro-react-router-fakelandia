@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import MisdemeanourFilter from "./Misdemeanour_Filter";
+//import ReasonDropdown from "./ReasonDropdownBox";
 
 import { MisdemeanourKind } from "./types/misdemeanours.types";
 
@@ -26,13 +26,6 @@ const MisdemeanourPage: React.FC = () => {
 
   return (
     <>
-      <div className="filter">
-        <MisdemeanourFilter
-          misdemeanourSelection={misdemeanoursFiltered}
-          onChangemisdemeanourSelection={setmisdemeanoursFiltered}
-        />
-      </div>
-
       <table className="table">
         <thead>
           <tr>
